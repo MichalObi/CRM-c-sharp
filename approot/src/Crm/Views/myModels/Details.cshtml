@@ -1,0 +1,60 @@
+@model Crm.Models.myModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Detale</h2>
+
+<div>
+    <h4>myModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Adress)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Adress)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.City)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.City)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CompanyName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CompanyName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FirstMidName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FirstMidName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LastName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LastName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Note)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Note)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.OpeningYear)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.OpeningYear)
+        </dd>
+    </dl>
+</div>
+<p>
+    <a asp-action="Edit" asp-route-id="@Model.myModelID" class="btn btn-success">Edytuj</a> |
+    <a asp-action="Index" class="btn btn-primary">Powrot</a>
+</p>

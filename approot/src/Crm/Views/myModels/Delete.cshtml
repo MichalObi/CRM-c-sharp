@@ -1,0 +1,64 @@
+@model Crm.Models.myModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Usun</h2>
+
+<h3>Czy na pewno usunac ?</h3>
+<div>
+    <h4>myModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Adress)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Adress)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.City)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.City)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CompanyName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CompanyName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FirstMidName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FirstMidName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LastName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LastName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Note)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Note)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.OpeningYear)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.OpeningYear)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-danger" /> |
+            <a asp-action="Index" class="btn btn-primary">Powrot</a>
+        </div>
+    </form>
+</div>
